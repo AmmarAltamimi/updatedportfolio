@@ -12,9 +12,27 @@ const Content = () => {
   const modal = useRef();
   const [state, handleSubmit] = useForm("xjkbgkyr");
 
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const message = e.target.message.value;
+
+    if (!email) {
+      toast.error('Please enter your email');
+      return;
+    }
+
+    if (!message) {
+      toast.error('Please enter your message');
+      return;
+    }
+
+    handleSubmit(e);
+  };
+
   useEffect(()=>{
     if(state?.succeeded){
-      toast.success(' Your message has been sent successfully')
+      toast.success('Your message has been sent successfully')
     }
   },[state])
 
@@ -56,7 +74,7 @@ const Content = () => {
             whileInView={{opacity:1, x:0}} 
             transition={{duration:0.8, delay: 0.4}} 
             className="w-full lg:w-1/2 relative space-y-6" 
-            onSubmit={handleSubmit}
+            onSubmit={handleFormSubmit}
           >
             <div className="relative">
               <label htmlFor="email" className="text-sm font-medium text-neutral-300 mb-2 block">Email Address</label>
