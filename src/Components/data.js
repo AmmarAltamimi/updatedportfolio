@@ -34,19 +34,6 @@ export const EXPERIENCES = [
       "RESTful APIs"
     ],
   },
-  {
-    year: "2022 - 2024",
-    role: "Front End Developer",
-    company: "Rukn",
-    description: `Developed and maintained responsive web applications using HTML5, CSS3, and React. Managed state with Redux/Context API and ensured code quality via Git`,
-    technologies:  [
-      "HTML5",
-      "CSS3",
-      "JavaScript/TypeScript",
-      "React",
-      "Redux/Context API"
-    ],
-  },
 ];
 
 

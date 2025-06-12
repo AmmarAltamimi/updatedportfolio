@@ -55,17 +55,17 @@ const Footer = () => {
           <motion.ul  variants={CVariants}  initial="hidden" whileInView="visible" className="flex justify-center items-center md:justify-start space-x-2 mb-4">
 
           <motion.li variants={ChlidrenVariants} >
-              <a href="https://www.linkedin.com/in/ammar-attamimi-9884512a4/"  target="_blank" className="bg-gray-700 text-gray-400 flex justify-center items-center w-12 h-12 text-2xl transition duration-500 hover:bg-black rounded-md">
+              <a href="https://x.com/home?lang=ar"  target="_blank" className="bg-gray-700 text-gray-400 flex justify-center items-center w-12 h-12 text-2xl transition duration-500 hover:bg-black rounded-md">
               <FaSquareXTwitter/>
               </a>
             </motion.li>
             <motion.li variants={ChlidrenVariants} >
-              <a href="https://github.com/dashboard"  target="_blank"  className="bg-gray-700 text-gray-400 flex justify-center items-center w-12 h-12 text-2xl transition duration-500 hover:bg-blue-600  rounded-md">
+              <a href="https://www.linkedin.com/in/ammar-attamimi-9884512a4/"  target="_blank"  className="bg-gray-700 text-gray-400 flex justify-center items-center w-12 h-12 text-2xl transition duration-500 hover:bg-blue-600  rounded-md">
               <FaLinkedin/>
               </a>
             </motion.li>
             <motion.li variants={ChlidrenVariants} >
-              <a href="https://x.com/home?lang=ar"  target="_blank"  className="bg-gray-700 text-gray-400 flex justify-center items-center w-12 h-12 text-2xl transition duration-500 hover:bg-black  rounded-md">
+              <a href="https://github.com/dashboard"  target="_blank"  className="bg-gray-700 text-gray-400 flex justify-center items-center w-12 h-12 text-2xl transition duration-500 hover:bg-black  rounded-md">
               <FaGithub/>
               </a>
             </motion.li>
